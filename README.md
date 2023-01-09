@@ -8,6 +8,7 @@
 ![img](ss/uas%20B%20pemrograman.png)
 ## ***``daftar_nilai.py`` berisi :***
 ## ***tambah_data***
+## ***Source Code***
 ```python
 data = []
 data = {}
@@ -24,7 +25,15 @@ while True:
         uas = int(input("Masukan Nilai UAS   :  "))
         akhir = (0.30 * tugas) + (0.35 * uts) + (0.35 * uas)
         data[nama] = nim, tugas, uts, uas, akhir
-    elif c.lower() == 'u':
+```
+    
+## ***Output***
+![img](ss/tambah.png)
+
+## ***Ubah_data***
+## ***Source Code***
+```python
+elif c.lower() == 'u':
         print('=======Ubah Data Mahasiswa=======')
         nama = input('Nama                :  ')
         if nama in data.keys():
@@ -36,8 +45,15 @@ while True:
             data[nama] = nim, tugas, uts, uas, akhir
         else:
             print("Data Nilai Tidak Ada".format(nama))
+```
 
-    elif c.lower() == 'l':
+## ***Output***
+![img](ss/Ubah.png)
+
+## ***Lihat_data***
+## ***Source Code***
+```python
+elif c.lower() == 'l':
         print("=======Daftar Nilai Mahasiswa=======")
         print("===============================================================================================")
         print(" |NO   |     NAMA      |    NIM    |     TUGAS    |     UTS     |       UAS    |    AKHIR     | ")
@@ -50,6 +66,14 @@ while True:
                                                                                                 x[1][2], x[1][3],
                                                                                                 x[1][4], i))
             print("============================================================================================")
+```
+
+## ***Output***
+![img](ss/Lihat.png)
+
+## ***Keluar Dan Hapus data***
+## ***Source Code***
+```python
 
     elif c.lower() == 'h':
         print("=======Hapus Data Mahasiswa=======")
@@ -60,5 +84,9 @@ while True:
             print("Data Nilai Tidak Ada".format(nama))
 
     elif c.lower() == 'k':
-        print("Keluar")
+        print("Keluar Dari Program")
         break
+```
+
+## ***Output***
+![img](ss/KEluar.png)
